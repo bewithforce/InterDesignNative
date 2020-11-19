@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AuthFragment">
+
+    <EditText
+        android:id="@+id/authPhoneNumberEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="292dp"
+        android:autofillHints="Hint"
+        android:ems="10"
+        android:hint="Номер телефона"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/authButton"
+        android:layout_width="169dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="343dp"
+        android:text="Войти" />
+
+</FrameLayout>
