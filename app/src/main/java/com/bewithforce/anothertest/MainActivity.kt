@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
             val fragmentInFrame = supportFragmentManager.findFragmentById(R.id.fragment)
             if(fragmentInFrame is AuthFragment){
-                supportFragmentManager.popBackStack()
+                //supportFragmentManager.popBackStack()
                 supportFragmentManager
                     .beginTransaction()
                     .replace(R.id.fragment, SearchFragment())
@@ -36,9 +36,15 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.fragment, AuthFragment())
                 .commit()
         }
-
-
     }
+
+   /* override fun onBackPressed() {
+        if(supportFragmentManager.backStackEntryCount > 1){
+            supportFragmentManager.popBackStack()
+        } else {
+            super.onBackPressed()
+        }
+    }*/
 
 
 }

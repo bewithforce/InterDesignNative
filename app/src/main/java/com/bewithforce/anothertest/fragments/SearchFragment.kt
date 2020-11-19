@@ -46,6 +46,7 @@ class SearchFragment : Fragment() {
                         newFragment.arguments = bundle
                         fragmentManager!!
                             .beginTransaction()
+                            .addToBackStack(null)
                             .replace(R.id.fragment, newFragment)
                             .commit()
                     }
